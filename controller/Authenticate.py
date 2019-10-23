@@ -47,7 +47,3 @@ class Authenticate(Resource):
 
         result = oauthService.get_raw_access_token(data = params)
         return result.json()
-
-class AuthenticateCallback(Resource):
-    def post(self):
-        return request.form
