@@ -28,7 +28,7 @@ class Authenticate(Resource):
         urlAuthorize = os.environ['URL_AUTHORIZE']
         urlConnectToken = os.environ['URL_CONNECT_TOKEN']
         code = request.form['code']
-        redirectUrl = str(os.environ['HOST_NAME']) + '/auth/token'
+        redirectUrl = str(os.environ['HOST_NAME']) + '/auth'
 
         oauthService = OAuth2Service(
             client_id = appId,
