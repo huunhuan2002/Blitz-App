@@ -1,13 +1,12 @@
 from flask import Flask
 from flask_restful import Api
-from controller import HelloWorld, Multi, Authenticate
+from controller import Authenticate
 
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(HelloWorld.HelloWorld, '/')
-api.add_resource(Multi.Multi, '/multi/<int:num>')
 api.add_resource(Authenticate.Authenticate, '/auth')
+api.add_resource(Authenticate.AuthenticateCallback, '/auth/token')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

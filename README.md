@@ -2,7 +2,7 @@
 # Các thư viện cần cài đặt:
 - Nếu chưa cài pip, thì cài theo link [PIP](https://pip.pypa.io/en/stable/installing/)
 - Sau khi cài pip xong tiến hành cài đặt các thư viện:
-    + pip3 install -r requirements.txt -t lib/
+    + pip3 install -r requirements.txt
 - Sau khi cài hoàn tất các thư viện trên thì tiến hành chạy thử:
     + Vào đường dẫn thư mục của project và gõ lệnh: flask run
 
